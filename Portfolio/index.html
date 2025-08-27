@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manda Bhavani - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">Manda Bhavani</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="background-image: url('images/bg.jpg');">
+    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h2>Hello, I'm <span>Manda Bhavani</span></h2>
+    <p>B.Tech in Computer Science and Data Science</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Computer Science and Data Science undergraduate with strong
+      academic performance and hands-on project experience in NLP and mobile
+      app development. Passionate about leveraging technology to solve
+      real-world problems, I aim to grow as a data-driven software engineer
+      and researcher.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span>2022 – 2026</span>
+        <p><b>CMR Institute of Technology, Hyderabad</b><br>B.Tech CSE (DS), CGPA: 8.89</p>
+      </div>
+      <div class="timeline-item">
+        <span>2020 – 2022</span>
+        <p><b>SR Junior College, Hanmakonda</b><br>12th, Percentage: 93.4%</p>
+      </div>
+      <div class="timeline-item">
+        <span>2019 – 2020</span>
+        <p><b>Teja High School, Jayashankar Bhupalpally</b><br>10th, Percentage: 95%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card" onclick="showPopup('newsPopup')">
+      <img src="images/news.jpg" alt="News Classifier">
+      <h3>📰 News Classifier</h3>
+      <p>Classify news as real or fake using NLP.</p>
+    </div>
+    <div class="card" onclick="showPopup('busPopup')">
+      <img src="images/bus.jpg" alt="Bus Tracker">
+      <h3>🚌 Bus Live Location Tracker</h3>
+      <p>Real-time GPS-based bus tracking app.</p>
+    </div>
+  </section>
+
+  <!-- Popups -->
+  <div id="newsPopup" class="popup">
+    <div class="popup-content animate">
+      <span class="close" onclick="closePopup('newsPopup')">&times;</span>
+      <h2>News Classifier</h2>
+      <p>Developed an NLP model to classify news articles as real or fake.
+         Trained on labeled datasets to calculate fake news percentages and
+         promote information integrity.</p>
+    </div>
+  </div>
+
+  <div id="busPopup" class="popup">
+    <div class="popup-content animate">
+      <span class="close" onclick="closePopup('busPopup')">&times;</span>
+      <h2>Bus Live Location Tracker</h2>
+      <p>Built a mobile app using MIT App Inventor for real-time bus tracking.
+         Integrated GPS to reduce waiting times and improve commute efficiency.</p>
+    </div>
+  </div>
+
+  <!-- Languages -->
+  <section id="languages">
+    <h2>Languages</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="images/python.png" alt="Python">
+        <p>Python</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/java.png" alt="Java">
+        <p>Java</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="images/nlp.jpg" alt="NLP">
+        <p>Natural Language Processing</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/ml.jpg" alt="Machine Learning">
+        <p>Machine Learning (Basics)</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="images/problem.jpg" alt="Problem Solving">
+        <p>Problem Solving</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/team.jpg" alt="Teamwork">
+        <p>Team Collaboration</p>
+      </div>
+      <div class="skill-card">
+        <img src="images/communication.jpg" alt="Communication">
+        <p>Communication</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p><b>Phone:</b> +91-8247772414</p>
+    <p><b>Email:</b> bhavanimanda62@gmail.com</p>
+    <p><b>Location:</b> Medchal, Telangana, India</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Manda Bhavani | Portfolio</p>
+  </footer>
+</body>
+</html>
